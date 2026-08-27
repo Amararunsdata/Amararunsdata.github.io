@@ -1,13 +1,13 @@
 title: Amara — Data Portfolio
 description: >-
   Data science portfolio showcasing projects, analysis, and visualizations.
-author: Amara
-email: your.email@example.com
-github_username: amararunsdata
+author: Amara Nwokedinobi
+email: dominus.amara@gmail.com
+github_username: Amararunsdata
 linkedin_url: "https://www.linkedin.com/in/your-linkedin-here"
 cv_url: "/assets/cv.pdf"   # swap for a hosted link, or keep the CV off this repo entirely and point this at wherever it lives
 
-url: "https://amararunsdata.github.io"
+url: "https://Amararunsdata.github.io"
 baseurl: ""
 
 markdown: kramdown
