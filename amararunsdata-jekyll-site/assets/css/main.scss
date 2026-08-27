@@ -1,0 +1,343 @@
+---
+---
+// ---------------------------------------------------------------
+// Design tokens
+// ---------------------------------------------------------------
+$paper:  #F7F5EF;
+$ink:    #1B1F23;
+$ink-60: rgba(27, 31, 35, 0.64);
+$ink-35: rgba(27, 31, 35, 0.35);
+$signal: #2E5EAA; // cobalt — links, primary accent
+$amber:  #E8A33D; // data highlight — tags, hover glow
+$sage:   #6E7F6C; // muted secondary
+$rule:   #D8D3C4; // hairline / grid color
+
+$display: 'Space Grotesk', -apple-system, sans-serif;
+$body:    'Source Serif 4', Georgia, serif;
+$mono:    'JetBrains Mono', 'SFMono-Regular', Menlo, monospace;
+
+$max: 760px;
+
+// ---------------------------------------------------------------
+// Reset & base
+// ---------------------------------------------------------------
+* { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: $paper;
+  background-image:
+    linear-gradient(to right, rgba(27,31,35,0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(27,31,35,0.035) 1px, transparent 1px);
+  background-size: 32px 32px;
+  color: $ink;
+  font-family: $body;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: $signal;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid $signal;
+  outline-offset: 3px;
+}
+
+h1, h2, h3 {
+  font-family: $display;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  margin: 0 0 0.5em;
+}
+
+p { margin: 0 0 1.1em; }
+
+.page {
+  max-width: $max;
+  margin: 0 auto;
+  padding: 0 24px 96px;
+}
+
+// ---------------------------------------------------------------
+// Nav
+// ---------------------------------------------------------------
+.site-nav {
+  max-width: $max;
+  margin: 0 auto;
+  padding: 28px 24px 40px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.site-nav__mark {
+  font-family: $mono;
+  font-size: 15px;
+  font-weight: 500;
+  color: $ink;
+  text-decoration: none;
+}
+
+.site-nav__mark-dot { color: $amber; }
+.site-nav__mark-tag { color: $ink-60; }
+
+.site-nav__links {
+  display: flex;
+  gap: 24px;
+  font-family: $mono;
+  font-size: 14px;
+}
+
+.site-nav__links a {
+  color: $ink-60;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 1px solid transparent;
+}
+
+.site-nav__links a:hover,
+.site-nav__links a.is-active {
+  color: $ink;
+  border-bottom-color: $amber;
+}
+
+// ---------------------------------------------------------------
+// Hero / eyebrow (shared across pages)
+// ---------------------------------------------------------------
+.eyebrow {
+  font-family: $mono;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $sage;
+  margin: 0 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 22px;
+  height: 1px;
+  background: $sage;
+  display: inline-block;
+}
+
+.hero h1 {
+  font-size: clamp(2.1rem, 5vw, 2.9rem);
+}
+
+.hero__lede {
+  font-size: 19px;
+  color: $ink-60;
+  max-width: 56ch;
+}
+
+// ---------------------------------------------------------------
+// About page
+// ---------------------------------------------------------------
+.bio {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid $rule;
+}
+
+.tools {
+  margin-top: 40px;
+}
+
+.tools__label {
+  font-family: $mono;
+  font-size: 13px;
+  color: $sage;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
+}
+
+.tools__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tools__list li {
+  font-family: $mono;
+  font-size: 13px;
+  padding: 5px 10px;
+  border: 1px solid $rule;
+  border-radius: 3px;
+  color: $ink-60;
+  background: rgba(255,255,255,0.4);
+}
+
+.record {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid $rule;
+}
+
+.record__row {
+  display: flex;
+  gap: 16px;
+  padding: 10px 0;
+  font-family: $mono;
+  font-size: 15px;
+  border-bottom: 1px dashed $rule;
+}
+
+.record__row:last-child { border-bottom: none; }
+
+.record__key {
+  color: $sage;
+  min-width: 92px;
+  flex-shrink: 0;
+}
+
+.record__value a {
+  color: $ink;
+  text-decoration-color: $rule;
+}
+
+.record__value a:hover {
+  color: $signal;
+  text-decoration-color: $signal;
+}
+
+// ---------------------------------------------------------------
+// Projects (the log)
+// ---------------------------------------------------------------
+.log {
+  margin-top: 48px;
+}
+
+.log-entry {
+  padding: 32px 0;
+  border-top: 1px solid $rule;
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 20px;
+}
+
+.log-entry:last-child {
+  border-bottom: 1px solid $rule;
+}
+
+.log-entry__index {
+  font-family: $mono;
+  font-size: 14px;
+  color: $ink-35;
+  padding-top: 4px;
+}
+
+.log-entry__title {
+  font-family: $display;
+  font-size: 21px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.log-entry__title a {
+  color: $ink;
+  text-decoration: none;
+}
+
+.log-entry__title a:hover {
+  color: $signal;
+}
+
+.log-entry__desc {
+  color: $ink-60;
+  font-size: 16px;
+  margin: 0 0 14px;
+  max-width: 56ch;
+}
+
+.log-entry__meta {
+  font-family: $mono;
+  font-size: 13px;
+  color: $sage;
+  background: rgba(110,127,108,0.07);
+  border: 1px solid $rule;
+  border-radius: 3px;
+  padding: 8px 12px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.log-entry__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.log-entry__tags span {
+  font-family: $mono;
+  font-size: 12px;
+  color: #8A5B15;
+  background: rgba(232,163,61,0.16);
+  border: 1px solid rgba(232,163,61,0.4);
+  border-radius: 3px;
+  padding: 2px 8px;
+}
+
+.log-entry__links {
+  font-family: $mono;
+  font-size: 13px;
+  display: flex;
+  gap: 16px;
+}
+
+@media (max-width: 520px) {
+  .log-entry {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+// ---------------------------------------------------------------
+// Footer
+// ---------------------------------------------------------------
+.site-footer {
+  max-width: $max;
+  margin: 0 auto;
+  padding: 32px 24px 60px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.site-footer__mono {
+  font-family: $mono;
+  font-size: 12px;
+  color: $ink-35;
+}
+
+.site-footer__sep { color: $rule; }
+
+// ---------------------------------------------------------------
+// Motion (respect reduced-motion preference)
+// ---------------------------------------------------------------
+@media (prefers-reduced-motion: no-preference) {
+  .log-entry, .record__row {
+    transition: background-color 0.15s ease;
+  }
+}

@@ -1,0 +1,30 @@
+# Add one entry per project. The site renders these in order, so put your
+# newest or best work first. Delete these sample entries and replace with
+# your own — nothing else in the site needs to change.
+
+- title: "Project title goes here"
+  description: >-
+    One or two sentences on what the project does and why it's interesting —
+    the problem, not just the tech stack.
+  metrics: "n=12,400 rows · model=XGBoost · accuracy=0.87"
+  tags: ["python", "pandas", "xgboost"]
+  repo_url: "https://github.com/amararunsdata/your-repo"
+  demo_url: ""   # leave blank if there's no live demo/notebook viewer
+
+- title: "Second project title"
+  description: >-
+    Short description of the second project — what question it answers
+    and what the output looks like (dashboard, report, model, etc).
+  metrics: "dataset=Kaggle · n=8,300 · rmse=0.42"
+  tags: ["sql", "tableau"]
+  repo_url: "https://github.com/amararunsdata/your-second-repo"
+  demo_url: ""
+
+- title: "Third project title"
+  description: >-
+    A brief, honest description. It's fine for early entries to be smaller
+    or exploratory — the log is meant to show range over time.
+  metrics: "n=2,100 · method=k-means · clusters=5"
+  tags: ["scikit-learn", "matplotlib"]
+  repo_url: "https://github.com/amararunsdata/your-third-repo"
+  demo_url: ""

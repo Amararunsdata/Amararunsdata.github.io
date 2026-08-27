@@ -1,0 +1,9 @@
+<header class="site-nav">
+  <a class="site-nav__mark" href="{{ '/' | relative_url }}">
+    <span class="site-nav__mark-name">amara</span><span class="site-nav__mark-dot">.</span><span class="site-nav__mark-tag">runs_data</span>
+  </a>
+  <nav class="site-nav__links">
+    <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}is-active{% endif %}">About</a>
+    <a href="{{ '/projects/' | relative_url }}" class="{% if page.url contains '/projects' %}is-active{% endif %}">Projects</a>
+  </nav>
+</header>
