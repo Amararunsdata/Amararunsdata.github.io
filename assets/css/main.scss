@@ -341,3 +341,43 @@ p { margin: 0 0 1.1em; }
     transition: background-color 0.15s ease;
   }
 }
+
+// ---------------------------------------------------------------
+// Images (profile photo + optional project images)
+// ---------------------------------------------------------------
+.hero--with-photo {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.hero__photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid $rule;
+  flex-shrink: 0;
+}
+
+.hero__text {
+  flex: 1;
+  min-width: 240px;
+}
+
+.log-entry__image {
+  width: 100%;
+  max-width: 480px;
+  border: 1px solid $rule;
+  border-radius: 4px;
+  margin-bottom: 14px;
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .hero--with-photo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
