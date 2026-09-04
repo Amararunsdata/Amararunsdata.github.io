@@ -3,15 +3,18 @@ layout: default
 title: About
 ---
 
-<section class="hero">
-  <p class="eyebrow">Data Portfolio — Log 001</p>
-  <h1>Hi, I'm Amara.</h1>
-  <h1>Welcome to my data showroom!</h1>
-  <p class="hero__lede">
-    I'm a data enthusiast who likes turning
-    messy datasets into clear, usable insights. This site is a running
-    log of the projects I've shipped along the way.
-  </p>
+<section class="hero hero--with-photo">
+  <img class="hero__photo" src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Photo of Amara">
+  <div class="hero__text">
+    <p class="eyebrow">Data Portfolio — Log 001</p>
+    <h1>Hi, I'm Amara.</h1>
+    <h1>Welcome to my data showroom!</h1>
+    <p class="hero__lede">
+      I'm a data enthusiast who likes turning
+      messy datasets into clear, usable insights. This site is a running
+      log of the projects I've shipped along the way.
+    </p>
+  </div>
 </section>
 
 <section class="bio">
