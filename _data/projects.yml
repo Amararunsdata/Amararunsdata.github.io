@@ -2,13 +2,13 @@
 # newest or best work first. Delete these sample entries and replace with
 # your own — nothing else in the site needs to change.
 
-- title: "Project title goes here"
+- title: "Job Application Tracker - Relational Database"
   description: >-
     One or two sentences on what the project does and why it's interesting —
     the problem, not just the tech stack.
-  metrics: "n=12,400 rows · model=XGBoost · accuracy=0.87"
-  tags: ["python", "pandas", "xgboost"]
-  repo_url: "https://github.com/amararunsdata/your-repo"
+  metrics: "n=6 tables"
+  tags: ["MySQL", "database design", "Excel"]
+  repo_url: "https://github.com/Amararunsdata/Job-Tracker_database"
   demo_url: ""   # leave blank if there's no live demo/notebook viewer
 
 - title: "Second project title"
