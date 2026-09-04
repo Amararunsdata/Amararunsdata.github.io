@@ -16,14 +16,16 @@ title: About
 
 <section class="bio">
   <p>
-    [One or two short paragraphs about you: your background, what kind of
-    problems you like working on, and what tools you reach for first. Keep
-    it conversational — write like you're introducing yourself at a meetup,
-    not like a resume header.]
+    I'm a Data Analytics professional with a background in market research,
+    digital marketing, and business intelligence. I enjoy turning messy,
+    real-world data into something structured, useful, and easy to
+    understand — whether that means building a database, finding patterns
+    in customer data, or creating a dashboard that actually answers a
+    business question.
   </p>
   <p>
-    [Optional second paragraph: what you're currently learning, a domain
-    you specialize in, or a fun fact that makes you memorable.]
+    These days, I'm particularly interested in designing data pipelines and
+    using AI to automate data workflows.
   </p>
 </section>
 
