@@ -17,6 +17,9 @@ permalink: /projects/
   <article class="log-entry">
     <div class="log-entry__index">{{ forloop.index | prepend: "000" | slice: -3, 3 }}</div>
     <div class="log-entry__body">
+      {% if project.image %}
+        <img class="log-entry__image" src="{{ project.image | relative_url }}" alt="{{ project.title }}">
+      {% endif %}
       <h2 class="log-entry__title">
         {% if project.demo_url and project.demo_url != "" %}
           <a href="{{ project.demo_url }}">{{ project.title }}</a>
