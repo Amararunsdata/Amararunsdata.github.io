@@ -12,6 +12,7 @@
   demo_url: ""   # leave blank if there's no live demo/notebook viewer
 
 - title: "Second project title"
+  image: "/assets/images/projects/dashboard-thumbnail.png"
   description: >-
     Short description of the second project — what question it answers
     and what the output looks like (dashboard, report, model, etc).
@@ -21,6 +22,7 @@
   demo_url: ""
 
 - title: "Third project title"
+  image: "/assets/images/projects/dashboard-thumbnail.png"
   description: >-
     A brief, honest description. It's fine for early entries to be smaller
     or exploratory — the log is meant to show range over time.
