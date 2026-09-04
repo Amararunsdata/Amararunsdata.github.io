@@ -6,9 +6,10 @@ title: About
 <section class="hero">
   <p class="eyebrow">Data Portfolio — Log 001</p>
   <h1>Hi, I'm Amara.</h1>
+  <h1>Welcome to my data showroom!</h1>
   <p class="hero__lede">
-    I'm a [your title — e.g. data analyst / data scientist] who likes turning
-    messy datasets into clear, honest visualizations. This site is a running
+    I'm a data enthusiast who likes turning
+    messy datasets into clear, usable insights. This site is a running
     log of the projects I've shipped along the way.
   </p>
 </section>
@@ -51,9 +52,5 @@ title: About
   <div class="record__row">
     <span class="record__key">linkedin</span>
     <span class="record__value"><a href="{{ site.linkedin_url }}">linkedin</a></span>
-  </div>
-  <div class="record__row">
-    <span class="record__key">cv</span>
-    <span class="record__value"><a href="{{ site.cv_url }}">download cv →</a></span>
   </div>
 </section>
