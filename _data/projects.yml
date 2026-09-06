@@ -14,7 +14,7 @@
   demo_url: ""   # leave blank if there's no live demo/notebook viewer
 
 - title: "Wine Customer Segmentation & Prediction"
-  image: "/assets/images/projects/dashboard-thumbnail.png"
+  image: "/assets/images/projects/Segment_box_plot_captioned.png"
   description: >-
     Analyzed wine purchasing behavior to identify distinct customer segments
     based on spending and purchase patterns, then used Random Forest to
