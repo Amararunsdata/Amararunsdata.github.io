@@ -13,15 +13,17 @@
   repo_url: "https://github.com/Amararunsdata/Job-Tracker_database"
   demo_url: ""   # leave blank if there's no live demo/notebook viewer
 
-- title: "Second project title"
+- title: "Wine Customer Segmentation & Prediction"
   image: "/assets/images/projects/dashboard-thumbnail.png"
   description: >-
-    Short description of the second project — what question it answers
-    and what the output looks like (dashboard, report, model, etc).
-  metrics: "dataset=Kaggle · n=8,300 · rmse=0.42"
-  tags: ["sql", "tableau"]
-  repo_url: "https://github.com/amararunsdata/your-second-repo"
-  demo_url: ""
+    Analyzed wine purchasing behavior to identify distinct customer segments
+    based on spending and purchase patterns, then used Random Forest to
+    predict segment membership from demographics — so new customers can be
+    segmented without needing their purchase history.
+  metrics: "clusters=4 · acc=0.62 · avg confidence=0.74"
+  tags: ["K-Means", "Random Forest", "Clustering", "Classification", "scikit-learn"]
+  repo_url: ""
+  demo_url: "https://www.kaggle.com/code/amaradoesdata/wine-enthusiasts-segmentation-prediction"
 
 - title: "Third project title"
   image: "/assets/images/projects/dashboard-thumbnail.png"
