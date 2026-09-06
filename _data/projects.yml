@@ -3,9 +3,11 @@
 # your own — nothing else in the site needs to change.
 
 - title: "Job Application Tracker - Relational Database"
+  image: "/assets/images/projects/job_applications ERD.png"
   description: >-
-    One or two sentences on what the project does and why it's interesting —
-    the problem, not just the tech stack.
+    A redesign of my job application tracker from a flat Excel sheet into a
+    relational database — using a junction table with a composite primary
+    key to make the full application journey queryable.
   metrics: "n=6 tables"
   tags: ["MySQL", "database design", "Excel"]
   repo_url: "https://github.com/Amararunsdata/Job-Tracker_database"
