@@ -25,12 +25,13 @@
   repo_url: ""
   demo_url: "https://www.kaggle.com/code/amaradoesdata/wine-enthusiasts-segmentation-prediction"
 
-- title: "Third project title"
-  image: "/assets/images/projects/dashboard-thumbnail.png"
+- title: "Customer Shopping Behaviour Analysis"
+  image: "/assets/images/projects/Customer Behaviour Analysis.png"
   description: >-
-    A brief, honest description. It's fine for early entries to be smaller
-    or exploratory — the log is meant to show range over time.
-  metrics: "n=2,100 · method=k-means · clusters=5"
-  tags: ["scikit-learn", "matplotlib"]
-  repo_url: "https://github.com/amararunsdata/your-third-repo"
-  demo_url: ""
+    Analyzed how demographics, spending, and purchase channels shape
+    customer value for a supermarket chain, then built an interactive
+    Tableau dashboard turning those patterns into retail-ready insights.
+  metrics: "n=2,240 customers · product category=6"
+  tags: ["Tableau", "Customer Analytics", "Data Visualization"]
+  repo_url: ""
+  demo_url: "https://public.tableau.com/app/profile/amara.nwokedinobi/viz/CustomerBehaviourAnalysis_17388655831720/CustomerBeahviourAnalysis"
